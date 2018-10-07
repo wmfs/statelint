@@ -1,0 +1,64 @@
+{
+  "name": "@wmfs/statelint",
+  "version": "0.0.0-sematically-released",
+  "description": "Validator for Amazon States Language JSON files.",
+  "author": "West Midlands Fire Service",
+  "homepage": "https://github.com/wmfs/statelint#readme",
+  "keywords": [
+    "tymly",
+    "package",
+    "state machines",
+    "aws"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmfs/statelint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wmfs/statelint/issues"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "3.0.0",
+    "@semantic-release/git": "7.0.4",
+    "chai": "4.2.0",
+    "codecov": "3.1.0",
+    "conventional-changelog-metahub": "2.0.2",
+    "cz-conventional-changelog": "2.1.0",
+    "dirty-chai": "2.0.1",
+    "mocha": "5.2.0",
+    "nyc": "13.0.1",
+    "semantic-release": "15.9.16",
+    "standard": "12.0.1",
+    "tmp": "0.0.33"
+  },
+  "scripts": {
+    "lint": "standard",
+    "test": "nyc mocha && standard",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "semantic-release": "semantic-release"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "analyzeCommits": {
+      "preset": "angular",
+      "releaseRules": [
+        {
+          "type": "build",
+          "scope": "deps",
+          "release": "minor"
+        }
+      ]
+    }
+  }
+}
