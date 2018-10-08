@@ -37,10 +37,10 @@ describe('StateMachineLint::StateNode', () => {
   )
 
   verify(
-    'should find States.ALL not in }) position',
+    'should find States.ALL not in last position',
     {
       Retry: [
-        { ErrorEquals: ['States.ALL', 'other'] },
+        { ErrorEquals: ['States.ALL'] },
         { ErrorEquals: ['YET ANOTHER'] }
       ]
     },
@@ -121,7 +121,7 @@ describe('StateMachineLint::StateNode', () => {
       States: {
         A: {
           Type: 'Pass',
-          Next: 'B',
+          Next: 'B'
         },
         B: {
           Type: 'C',
@@ -157,5 +157,7 @@ function verify(title, json, count) {
     const checker = stateNode()
     checker.check(json, 'a.b', problems)
     expect(problems.length).to.eql(count)
+
+    console.log(problems)
   })
 } // verify
