@@ -9,9 +9,11 @@ const stateNode = require('../lib/statelint/state_node')
 describe('StateMachineLint::StateNode', () => {
   it('should find missing StartAt targets', () => {
     const json = {
-      "StartAt": "x",
-      "States": {
-        "y": {"Type":"Succeed"}
+      StartAt: 'x',
+      States: {
+        y: {
+          Type: 'Succeed'
+        }
       }
     }
 
@@ -23,12 +25,13 @@ describe('StateMachineLint::StateNode', () => {
   })
 
   it('should catch nested problems', () => {
-    const json = { "StartAt": "x",
-      "States": {
-        "x": {
-          "StartAt": "z",
-          "States": {
-            "w": 1
+    const json = {
+      StartAt: 'x',
+      States: {
+        x: {
+          StartAt: 'z',
+          States: {
+            w: 1
           }
         }
       }
