@@ -151,7 +151,7 @@ describe('StateMachineLint::StateNode', () => {
   )
 })
 
-function verify(title, json, count) {
+function verify (title, json, count) {
   it(title, () => {
     const problems = []
     const checker = stateNode()
