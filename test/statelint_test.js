@@ -108,8 +108,8 @@ describe('StateMachineLint', () => {
       'should find States.ALL not in last position',
       {
         Retry: [
-          {ErrorEquals: ['States.ALL']},
-          {ErrorEquals: ['YET ANOTHER']}
+          { ErrorEquals: ['States.ALL'] },
+          { ErrorEquals: ['YET ANOTHER'] }
         ]
       },
       6
@@ -119,8 +119,8 @@ describe('StateMachineLint', () => {
       'should find States.ALL not by itself',
       {
         Retry: [
-          {ErrorEquals: ['YET ANOTHER']},
-          {ErrorEquals: ['States.ALL', 'other']}
+          { ErrorEquals: ['YET ANOTHER'] },
+          { ErrorEquals: ['States.ALL', 'other'] }
         ]
       },
       6
