@@ -14,18 +14,10 @@ statelint state-machine-spec [state-machine-spec...]
 
 There are no options. If you see no output, your state machine is fine.
 
-## To Do
-
-At time of writing, the awslabs' package carries the following TODO
-
-> Currently covers most of the grammatical constraints for
-> state-machine definitions. The checking of JsonPath syntax is
-> hand-built and probably imperfect.
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub
+Bug reports and pull requests are welcome on GitHub. Please be aware of our [Code of Conduct](https://github.com/wmfs/statelint/blob/master/CODE_OF_CONDUCT.md)
 
 ## <a name="license"></a>License
-[MIT](https://github.com/wmfs/statelint/blob/master/LICENSE)
+Licensed under the terms of the [MIT license](https://github.com/wmfs/statelint/blob/master/LICENSE). Copyright (c) 2018 West Midlands Fire Service
 
