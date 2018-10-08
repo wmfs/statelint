@@ -4,9 +4,9 @@ const chai = require('chai')
 chai.use(require('dirty-chai'))
 const expect = chai.expect
 
-const stateNode = require('../lib/statelint/state_node')
+const checkStateNodes = require('../lib/statelint/state_node')
 
-describe('StateMachineLint::StateNode', () => {
+describe('StateNode', () => {
   verify(
     'should find missing StartAt targets',
     {
@@ -153,11 +153,7 @@ describe('StateMachineLint::StateNode', () => {
 
 function verify (title, json, count) {
   it(title, () => {
-    const problems = []
-    const checker = stateNode()
-    checker.check(json, 'a.b', problems)
+    const problems = checkStateNodes(json, 'a.b')
     expect(problems.length).to.eql(count)
-
-    console.log(problems)
   })
 } // verify
