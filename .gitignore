@@ -89,7 +89,6 @@ jspm_packages
 
 .project
 .metadata
-bin/
 tmp/
 *.tmp
 *.bak

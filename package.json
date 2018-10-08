@@ -19,8 +19,12 @@
     "url": "https://github.com/wmfs/statelint/issues"
   },
   "main": "lib/index.js",
+  "bin": {
+    "statelint": "bin/statelint.js"
+  },
   "dependencies": {
-    "@wmfs/j2119": "1.1.0"
+    "@wmfs/j2119": "1.1.1",
+    "cli": "^1.0.1"
   },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.0",
@@ -37,6 +41,7 @@
     "tmp": "0.0.33"
   },
   "scripts": {
+    "statelint": "./bin/statelint.js",
     "lint": "standard",
     "test": "nyc mocha && standard",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",

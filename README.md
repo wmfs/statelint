@@ -6,13 +6,38 @@ An npm package providing a validator for Amazon State Language JSON files. Usabl
 
 This package is derived from [awslabs/statelint](https://github.com/awslabs/statelint).
 
-## Usage
+## Command-line Usage
+
+```sh
+npm install --global @wmfs/statelint
+```
 
 ```javascript
 statelint state-machine-spec [state-machine-spec...]
 ```
 
 There are no options. If you see no output, your state machine is fine.
+
+## Library Usage
+
+```sh
+npm install --save @wmfs/statelint
+```
+
+```javascript
+const stateLint = require('@wmfs/statelint')
+
+const problems = stateLint.validate(json)
+if (problems.length !== 0) {
+  console.log('Oh dear!')
+  problems.forEach(p => console.log(`ERROR: ${p}`)
+}
+```
+
+`json` is the state machine to validate. It can be a JSON object, a filename, or a file descriptor.
+
+`stateLine.validate` returns an array, which contains descriptions of any validation errors found. If the array is empty, the state machine is fine.
+
 
 ## Contributing
 
