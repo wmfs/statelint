@@ -23,7 +23,7 @@
     "statelint": "bin/statelint.js"
   },
   "dependencies": {
-    "@wmfs/j2119": "1.1.1",
+    "@wmfs/j2119": "1.3.0",
     "cli": "^1.0.1"
   },
   "devDependencies": {
