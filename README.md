@@ -38,10 +38,9 @@ if (problems.length !== 0) {
 }
 ```
 
-* `json` is the state machine to validate. It can be a JSON object, a filename, or a file descriptor.
+* `json` is the state machine to validate as a JSON object.
 
 `stateLint.validate` returns an array or error strings. If the array is empty, the state machine is fine. If not, then there's a problem! The validator is exhaustive, so it will report every problem it finds, not simply bail at the first thing. The error messages have the general form `<json-path to error> <description of error>`.
-
 
 ## Contributing
 
