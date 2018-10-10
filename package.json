@@ -23,8 +23,8 @@
     "statelint": "bin/statelint.js"
   },
   "dependencies": {
-    "@wmfs/j2119": "1.4.0",
-    "cli": "^1.0.1",
+    "@wmfs/j2119": "1.5.1",
+    "cli": "1.0.1",
     "n-readlines": "1.0.0"
   },
   "devDependencies": {
