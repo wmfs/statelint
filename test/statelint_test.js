@@ -8,7 +8,7 @@ const stateLint = require('../lib')
 
 describe('StateMachineLint', () => {
   verify(
-    'allow Fail states to omit optional Cause/Error fields',
+    'Allow Fail states to omit optional Cause/Error fields',
     require('./fixtures/minimal-fail-state.json'),
     0
   )
@@ -219,6 +219,13 @@ describe('StateMachineLint', () => {
       1
     )
   })
+
+  describe('Validate Catch', () => {
+    verify(
+      'Catch States.ALL',
+      require('./fixtures/hello-world-with-caught-failures'),
+      0)
+  })
 })
 
 function verify (label, json, count, msg) {
@@ -226,7 +233,7 @@ function verify (label, json, count, msg) {
     const linter = stateLint()
     const problems = linter.validate(json)
 
-    // console.log(problems)
+    console.log(problems)
 
     expect(problems.length).to.eql(count)
     if (msg) {

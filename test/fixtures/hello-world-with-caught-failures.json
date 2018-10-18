@@ -1,0 +1,38 @@
+{
+  "Comment": "This machine is valid, but statelint incorrectly reported an error on the States.ALL catch",
+  "StartAt": "Hello",
+  "States": {
+    "Hello": {
+      "Type": "Task",
+      "Resource": "module:hello",
+      "Next": "Failure1"
+    },
+    "Failure1": {
+      "Type": "Task",
+      "Resource": "module:failure",
+      "Catch": [
+        {
+          "ErrorEquals": [ "States.ALL" ],
+          "Next": "Failure2"
+        }
+      ],
+      "End": true
+    },
+    "Failure2": {
+      "Type": "Task",
+      "Resource": "module:failure",
+      "Catch": [
+        {
+          "ErrorEquals": [ "SomethingBadHappened" ],
+          "Next": "World"
+        }
+      ],
+      "End": true
+    },
+    "World": {
+      "Type": "Task",
+      "Resource": "module:world",
+      "End": true
+    }
+  }
+}

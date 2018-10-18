@@ -37,7 +37,7 @@ describe('StateNode', () => {
   )
 
   verify(
-    'should find States.ALL not in last position',
+    'should find States.ALL not in last position of a Retry',
     {
       Retry: [
         { ErrorEquals: ['States.ALL'] },
@@ -47,6 +47,16 @@ describe('StateNode', () => {
     1
   )
 
+  verify(
+    'should find States.ALL not in last position of a Catch',
+    {
+      Catch: [
+        { ErrorEquals: ['States.ALL'], Next: 'Zumba' },
+        { ErrorEquals: ['YET ANOTHER'], Next: 'Insanity' }
+      ]
+    },
+    1
+  )
   verify(
     'should find States.ALL not by itself',
     {
