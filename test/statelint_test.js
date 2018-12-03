@@ -29,6 +29,63 @@ describe('StateMachineLint', () => {
     )
   })
 
+  describe('Parameters only valid on Pass, Task, and Parallel', () => {
+    verify(
+      'Pass With Parameters',
+      require('./fixtures/pass-with-parameters'),
+      0
+    )
+    verify(
+      'Task With Parameters',
+      require('./fixtures/task-with-parameters'),
+      0
+    )
+    verify(
+      'Parallel With Parameters',
+      require('./fixtures/parallel-with-parameters'),
+      0
+    )
+  })
+
+  describe('Parameters not valid on all other state types', () => {
+    verify(
+      'Choice With Parameters',
+      require('./fixtures/choice-with-parameters'),
+      1,
+      '"Parameters'
+    )
+    verify(
+      'Wait With Parameters',
+      require('./fixtures/wait-with-parameters'),
+      1,
+      '"Parameters'
+    )
+    verify(
+      'Succeed With Parameters',
+      require('./fixtures/succeed-with-parameters'),
+      1,
+      '"Parameters'
+    )
+    verify(
+      'Fail With Parameters',
+      require('./fixtures/fail-with-parameters'),
+      1,
+      '"Parameters'
+    )
+  })
+
+  describe('Parameter paths', () => {
+    verify(
+      'reject non-Path constructs in Parameter fields ending in ".$"',
+      require('./fixtures/parameter-path-problems'),
+      4,
+      'bad1',
+      'bad2',
+      'bad3',
+      'bad4'
+    )
+  })
+
   describe('ResultPath only valid on Pass, Task, Parallel', () => {
     verify(
       'Pass with ResultPath',
@@ -228,7 +285,7 @@ describe('StateMachineLint', () => {
   })
 })
 
-function verify (label, json, count, msg) {
+function verify (label, json, count, ...msg) {
   it(label, () => {
     const linter = stateLint()
     const problems = linter.validate(json)
@@ -236,8 +293,8 @@ function verify (label, json, count, msg) {
     console.log(problems)
 
     expect(problems.length).to.eql(count)
-    if (msg) {
-      expect(problems[0]).to.include(msg)
+    for (let i = 0; i != msg.length; ++i) {
+      expect(problems[i]).to.include(msg[i])
     }
   })
 }
