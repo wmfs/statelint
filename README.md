@@ -4,7 +4,7 @@
 
 An npm package providing a validator for [Amazon States Language](https://states-language.net/spec.html) JSON files. Usable from the command-line or as a library.
 
-This package is derived from Amazon Web Services Labs' [awslabs/statelint](https://github.com/awslabs/statelint).
+This package is derived from Amazon Web Services Labs' [awslabs/statelint](https://github.com/awslabs/statelint) and is up to date with the [changes announced on 29 November 2018](https://aws.amazon.com/blogs/aws/new-compute-database-messaging-analytics-and-machine-learning-integration-for-aws-step-functions/).
 
 ## From the Command-line 
 
