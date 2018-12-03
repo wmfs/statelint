@@ -293,7 +293,7 @@ function verify (label, json, count, ...msg) {
     console.log(problems)
 
     expect(problems.length).to.eql(count)
-    for (let i = 0; i != msg.length; ++i) {
+    for (let i = 0; i !== msg.length; ++i) {
       expect(problems[i]).to.include(msg[i])
     }
   })
