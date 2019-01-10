@@ -1,0 +1,20 @@
+{
+  "Comment": "BackoffRate defined as a Float, but should allow integer - see https://github.com/wmfs/j2119/issues/37",
+  "StartAt": "Start",
+  "TimeoutSeconds": 3600,
+  "States": {
+    "Start": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:FUNCTION_NAME",
+      "Retry": [
+        {
+          "ErrorEquals": ["States.ALL"],
+          "IntervalSeconds": 60,
+          "MaxAttempts": 5,
+          "BackoffRate": 2
+        }
+      ],
+      "End": true
+    }
+  }
+}

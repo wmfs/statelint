@@ -283,6 +283,14 @@ describe('StateMachineLint', () => {
       require('./fixtures/hello-world-with-caught-failures'),
       0)
   })
+
+  describe('Real-life state machines', () => {
+    verify(
+      'BackoffRate maybe an integer',
+      require('./fixtures/j2119_issues_37'),
+      0
+    )
+  })
 })
 
 function verify (label, json, count, ...msg) {
