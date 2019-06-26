@@ -1,3 +1,15 @@
+# [1.8.0](https://github.com/wmfs/statelint/compare/v1.7.1...v1.8.0) (2019-06-26)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/j2119 requirement from 1.7.1 to 1.8.0 ([e45339c](https://github.com/wmfs/statelint/commit/e45339c))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([e8e8435](https://github.com/wmfs/statelint/commit/e8e8435))
+* **deps-dev:** update codecov requirement from 3.1.0 to 3.5.0 ([460d5be](https://github.com/wmfs/statelint/commit/460d5be))
+* **deps-dev:** update mocha requirement from 5.2.0 to 6.1.4 ([0d3c982](https://github.com/wmfs/statelint/commit/0d3c982))
+* **deps-dev:** update semantic-release requirement ([7195155](https://github.com/wmfs/statelint/commit/7195155))
+* **deps-dev:** update tmp requirement from 0.0.33 to 0.1.0 ([d84b577](https://github.com/wmfs/statelint/commit/d84b577))
+
 ## [1.7.1](https://github.com/wmfs/statelint/compare/v1.7.0...v1.7.1) (2019-01-10)
 
 
