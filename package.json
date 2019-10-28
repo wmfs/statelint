@@ -28,7 +28,7 @@
     "n-readlines": "1.0.0"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "3.0.4",
+    "@semantic-release/changelog": "3.0.5",
     "@semantic-release/git": "7.0.16",
     "chai": "4.2.0",
     "codecov": "3.5.0",
