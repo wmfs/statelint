@@ -1,3 +1,33 @@
+# [1.9.0](https://github.com/wmfs/statelint/compare/v1.8.0...v1.9.0) (2019-11-14)
+
+
+### ✨ Features
+
+* allow IsUndefined as a comparator ([](https://github.com/wmfs/statelint/commit/4a3c69c))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/changelog requirement ([](https://github.com/wmfs/statelint/commit/0e30df4))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([](https://github.com/wmfs/statelint/commit/1fbd6b5))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([](https://github.com/wmfs/statelint/commit/806f79b))
+* **deps-dev:** update cz-conventional-changelog requirement ([](https://github.com/wmfs/statelint/commit/1e29081))
+* **deps-dev:** update mocha requirement from 6.1.4 to 6.2.0 ([](https://github.com/wmfs/statelint/commit/0066ac1))
+* **deps-dev:** update nyc requirement from 13.1.0 to 14.1.1 ([](https://github.com/wmfs/statelint/commit/486a3d0))
+* **deps-dev:** update semantic-release requirement ([](https://github.com/wmfs/statelint/commit/6a8dae1))
+* **deps-dev:** update semantic-release requirement ([](https://github.com/wmfs/statelint/commit/54d1dcb))
+
+
+### 📚 Documentation
+
+* Add CircleCI badge ([](https://github.com/wmfs/statelint/commit/797a382))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** Add CircleCI config ([](https://github.com/wmfs/statelint/commit/7fbc3cf))
+* **travis:** Remove Travis config ([](https://github.com/wmfs/statelint/commit/81b993b))
+
 # [1.8.0](https://github.com/wmfs/statelint/compare/v1.7.1...v1.8.0) (2019-06-26)
 
 
