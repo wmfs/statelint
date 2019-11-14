@@ -52,7 +52,8 @@ A Choice Rule with an "Or" field is a "Boolean".
 A Choice Rule with a "Not" field is a "Boolean".
 A Choice Rule MAY have a referencePath field named "Variable".
 A Choice Rule with a "Variable" field is a "Comparison".
-A Comparison MUST have a field named one of "StringEquals", "StringLessThan", "StringGreaterThan", "StringLessThanEquals", "StringGreaterThanEquals", "NumericEquals", "NumericLessThan", "NumericGreaterThan", "NumericLessThanEquals", "NumericGreaterThanEquals", "BooleanEquals", "TimestampEquals", "TimestampLessThan", "TimestampGreaterThan", "TimestampLessThanEquals", or "TimestampGreaterThanEquals".
+A Comparison MUST have a field named one of "IsUndefined", "StringEquals", "StringLessThan", "StringGreaterThan", "StringLessThanEquals", "StringGreaterThanEquals", "NumericEquals", "NumericLessThan", "NumericGreaterThan", "NumericLessThanEquals", "NumericGreaterThanEquals", "BooleanEquals", "TimestampEquals", "TimestampLessThan", "TimestampGreaterThan", "TimestampLessThanEquals", or "TimestampGreaterThanEquals".
+A Comparison MAY have a boolean field named "IsUndefined".
 A Comparison MAY have a string field named "StringEquals".
 A Comparison MAY have a string field named "StringLessThan".
 A Comparison MAY have a string field named "StringGreaterThan".
@@ -81,6 +82,7 @@ A Nested Rule with a "Not" field is a "Nested Boolean".
 A Nested Rule MUST NOT have a field named "Next".
 A Nested Rule MAY have a referencePath field named "Variable".
 A Nested Rule with a "Variable" field is a "Nested Comparison".
+A Nested Comparison MAY have a boolean field named "IsUndefined".
 A Nested Comparison MAY have a string field named "StringEquals".
 A Nested Comparison MAY have a string field named "StringLessThan".
 A Nested Comparison MAY have a string field named "StringGreaterThan".
