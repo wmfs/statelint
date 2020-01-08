@@ -1,3 +1,13 @@
+# [1.10.0](https://github.com/wmfs/statelint/compare/v1.9.0...v1.10.0) (2020-01-08)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.8.0 to 1.9.0 ([ae8e717](https://github.com/wmfs/statelint/commit/ae8e7178d96d7dd3b56ad0c1006f8b41ed4f2dc1))
+* **deps-dev:** bump mocha from 6.2.2 to 7.0.0 ([ffa578b](https://github.com/wmfs/statelint/commit/ffa578befa265543e4fc1caae9bd63adac3163c5))
+* **deps-dev:** bump packages ([f4faad2](https://github.com/wmfs/statelint/commit/f4faad29bf47716fb4dd2f6e6ecd2757a5c922e9))
+* **deps-dev:** update standard requirement from 12.0.1 to 14.3.1 ([02966ca](https://github.com/wmfs/statelint/commit/02966ca9a30f1eaa69ccc4750e1b4377b095c51d))
+
 # [1.9.0](https://github.com/wmfs/statelint/compare/v1.8.0...v1.9.0) (2019-11-14)
 
 
