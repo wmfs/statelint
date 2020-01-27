@@ -1,3 +1,13 @@
+# [1.11.0](https://github.com/wmfs/statelint/compare/v1.10.0...v1.11.0) (2020-01-27)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.9.0 to 1.10.0 ([b71398d](https://github.com/wmfs/statelint/commit/b71398dc1b8b5e2a49d77a892fa78a31691cb2c4))
+* **deps-dev:** bump codecov from 3.6.1 to 3.6.2 ([b721446](https://github.com/wmfs/statelint/commit/b7214467f7283abafeef0ec6db65c252823fbe9d))
+* **deps-dev:** bump conventional-changelog-metahub from 3.0.0 to 4.0.0 ([d402654](https://github.com/wmfs/statelint/commit/d402654fdf6079365dc248bdbdc4f7bbda8bd1bf))
+* **deps-dev:** bump mocha from 7.0.0 to 7.0.1 ([184d140](https://github.com/wmfs/statelint/commit/184d140c0e799ceacf98ef299207971f4ff76538))
+
 # [1.10.0](https://github.com/wmfs/statelint/compare/v1.9.0...v1.10.0) (2020-01-08)
 
 
