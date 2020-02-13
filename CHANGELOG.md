@@ -1,3 +1,15 @@
+# [1.12.0](https://github.com/wmfs/statelint/compare/v1.11.0...v1.12.0) (2020-02-13)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.10.0 to 1.11.0 ([dbb82e0](https://github.com/wmfs/statelint/commit/dbb82e0a982c43d13591fa003ac13f92398839b7))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/changelog from 3.0.6 to 5.0.0 ([9842f25](https://github.com/wmfs/statelint/commit/9842f25584dbdb82cf0945aa88e069a27b921390))
+* **deps-dev:** bump codecov from 3.6.2 to 3.6.3 ([e765080](https://github.com/wmfs/statelint/commit/e765080a25b6f5702b242224e1e55937844d0d69))
+* **deps-dev:** bump codecov from 3.6.3 to 3.6.4 ([96616e5](https://github.com/wmfs/statelint/commit/96616e51b6e75a202603774d0ca62eebc607c7a5))
+* **deps-dev:** bump codecov from 3.6.4 to 3.6.5 ([c828b4a](https://github.com/wmfs/statelint/commit/c828b4a471c9bc11f25b5766ad68cd8db5a7d04c))
+* **deps-dev:** bump cz-conventional-changelog from 3.0.2 to 3.1.0 ([348ceff](https://github.com/wmfs/statelint/commit/348ceff3f8aa6df04d3a7f14d017a19269133276))
+
 # [1.11.0](https://github.com/wmfs/statelint/compare/v1.10.0...v1.11.0) (2020-01-27)
 
 
