@@ -1,3 +1,24 @@
+# [1.13.0](https://github.com/wmfs/statelint/compare/v1.12.0...v1.13.0) (2020-04-05)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.11.0 to 1.12.0 ([da2acd5](https://github.com/wmfs/statelint/commit/da2acd50d6bc852dac15bde12433d9592e249963))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/changelog from 5.0.0 to 5.0.1 ([9b23bc5](https://github.com/wmfs/statelint/commit/9b23bc535ba3a96ce1e219dc1b125d211b6b7b00))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/git from 7.0.18 to 9.0.0 ([fd419bd](https://github.com/wmfs/statelint/commit/fd419bdf5bb5b2486c314cdeae0913701f83e4a3))
+* **deps-dev:** bump conventional-changelog-metahub from 4.0.0 to 4.0.1 ([9d12270](https://github.com/wmfs/statelint/commit/9d12270998f77ffd9d4630ed06aeeff565445b13))
+* **deps-dev:** bump mocha from 7.0.1 to 7.1.0 ([82ca5ad](https://github.com/wmfs/statelint/commit/82ca5ad5eef188f56ee2738b0e34dc8e277e3e8e))
+* **deps-dev:** bump mocha from 7.1.0 to 7.1.1 ([0d57162](https://github.com/wmfs/statelint/commit/0d5716221e7f978567b44077f62c564cf35fee0e))
+* **deps-dev:** bump nyc from 15.0.0 to 15.0.1 ([9e8246c](https://github.com/wmfs/statelint/commit/9e8246c236d98bbe09a343a3f7e1013e48d53d77))
+* **deps-dev:** bump semantic-release from 15.14.0 to 17.0.4 ([4d48121](https://github.com/wmfs/statelint/commit/4d48121501829853ae8ac219fe8d6c161ed37a65))
+* **deps-dev:** bump standard from 14.3.1 to 14.3.2 ([1020a84](https://github.com/wmfs/statelint/commit/1020a840a152ef08aa2a85aba7f50b2473f278f2))
+* **deps-dev:** bump standard from 14.3.2 to 14.3.3 ([23e5d4d](https://github.com/wmfs/statelint/commit/23e5d4dedefe2e42c664835c85439c4fa049a190))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** add context env var config to config.yml ([a83152a](https://github.com/wmfs/statelint/commit/a83152ab357efaa27067bb6c83c0718a29c089f0))
+
 # [1.12.0](https://github.com/wmfs/statelint/compare/v1.11.0...v1.12.0) (2020-02-13)
 
 
