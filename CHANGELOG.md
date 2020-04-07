@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/wmfs/statelint/compare/v1.13.0...v1.14.0) (2020-04-07)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.12.0 to 1.13.0 ([bf47817](https://github.com/wmfs/statelint/commit/bf478174f725e800aa0df7cf1bebfbc238ddb107))
+
 # [1.13.0](https://github.com/wmfs/statelint/compare/v1.12.0...v1.13.0) (2020-04-05)
 
 
