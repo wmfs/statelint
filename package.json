@@ -39,7 +39,7 @@
     "nyc": "15.0.1",
     "semantic-release": "17.0.7",
     "standard": "14.3.3",
-    "tmp": "0.2.0"
+    "tmp": "0.2.1"
   },
   "scripts": {
     "statelint": "./bin/statelint.js",
