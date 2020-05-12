@@ -1,3 +1,17 @@
+# [1.15.0](https://github.com/wmfs/statelint/compare/v1.14.0...v1.15.0) (2020-05-12)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.13.0 to 1.14.0 ([676f1ab](https://github.com/wmfs/statelint/commit/676f1abc83ec85ccf0ce7b49604068b64d908943))
+* **deps-dev:** bump cz-conventional-changelog from 3.1.0 to 3.2.0 ([65aa9e3](https://github.com/wmfs/statelint/commit/65aa9e3e9b99b1dc3b3a96305b653e3fa8f58b28))
+* **deps-dev:** bump mocha from 7.1.1 to 7.1.2 ([d67a187](https://github.com/wmfs/statelint/commit/d67a1878319e1025b6acfd155ca5a26139bfe6b1))
+* **deps-dev:** bump semantic-release from 17.0.4 to 17.0.6 ([e72a24f](https://github.com/wmfs/statelint/commit/e72a24f0ba402f0cc906799f3d9bbb24d658c34c))
+* **deps-dev:** bump semantic-release from 17.0.6 to 17.0.7 ([91c7c96](https://github.com/wmfs/statelint/commit/91c7c96b198a1e0eb8214e465d2a6d9ab5c28c71))
+* **deps-dev:** bump standard from 14.3.3 to 14.3.4 ([6c93a65](https://github.com/wmfs/statelint/commit/6c93a657bada816ecbd789c6575994a59639ddd6))
+* **deps-dev:** bump tmp from 0.1.0 to 0.2.0 ([4547fab](https://github.com/wmfs/statelint/commit/4547fab1d6d2731b20589200df163803a222f5f7))
+* **deps-dev:** bump tmp from 0.2.0 to 0.2.1 ([b7ddd24](https://github.com/wmfs/statelint/commit/b7ddd24a35783ae8c90d4c785c6c262a764cc410))
+
 # [1.14.0](https://github.com/wmfs/statelint/compare/v1.13.0...v1.14.0) (2020-04-07)
 
 
