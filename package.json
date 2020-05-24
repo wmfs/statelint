@@ -37,7 +37,7 @@
     "dirty-chai": "2.0.1",
     "mocha": "7.2.0",
     "nyc": "15.0.1",
-    "semantic-release": "17.0.7",
+    "semantic-release": "17.0.8",
     "standard": "14.3.4",
     "tmp": "0.2.1"
   },
