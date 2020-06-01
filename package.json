@@ -36,7 +36,7 @@
     "cz-conventional-changelog": "3.2.0",
     "dirty-chai": "2.0.1",
     "mocha": "7.2.0",
-    "nyc": "15.0.1",
+    "nyc": "15.1.0",
     "semantic-release": "17.0.8",
     "standard": "14.3.4",
     "tmp": "0.2.1"
