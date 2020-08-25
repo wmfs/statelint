@@ -1,3 +1,27 @@
+# [1.16.0](https://github.com/wmfs/statelint/compare/v1.15.0...v1.16.0) (2020-08-25)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.14.0 to 1.15.0 ([7a3dc6f](https://github.com/wmfs/statelint/commit/7a3dc6ffcd16df8648de90181e4512f1ee8626b8))
+* **deps-dev:** bump codecov from 3.6.5 to 3.7.0 ([998a2f4](https://github.com/wmfs/statelint/commit/998a2f4c4bd1a381d052f1d4152d5657175874c8))
+* **deps-dev:** bump codecov from 3.7.0 to 3.7.1 ([142e26c](https://github.com/wmfs/statelint/commit/142e26c73bcee20d06b3de143844fb029f1d7241))
+* **deps-dev:** bump codecov from 3.7.1 to 3.7.2 ([a36e26f](https://github.com/wmfs/statelint/commit/a36e26f08691192216ef41bbb9b503288e9619ca))
+* **deps-dev:** bump mocha from 7.1.2 to 7.2.0 ([7809a04](https://github.com/wmfs/statelint/commit/7809a04b8547106a3057e61d3aae42b5911fb3e5))
+* **deps-dev:** bump mocha from 7.2.0 to 8.0.1 ([2f8b602](https://github.com/wmfs/statelint/commit/2f8b6021eea1b2f9db4527261ca5814b8fa52672))
+* **deps-dev:** bump mocha from 8.0.1 to 8.1.0 ([8514099](https://github.com/wmfs/statelint/commit/85140998f1a0d4813ecb3e8e2e29cf29b77b34ee))
+* **deps-dev:** bump mocha from 8.1.0 to 8.1.1 ([f0d51f2](https://github.com/wmfs/statelint/commit/f0d51f2af8e54391c88e713ff7aa6d219d1b10a0))
+* **deps-dev:** bump nyc from 15.0.1 to 15.1.0 ([f7b2527](https://github.com/wmfs/statelint/commit/f7b2527414252c648fb00a621c5d0e1e2cdc77eb))
+* **deps-dev:** bump semantic-release from 17.0.7 to 17.0.8 ([107afe0](https://github.com/wmfs/statelint/commit/107afe09fed08d07ed6be99826ff585ce97ebf24))
+* **deps-dev:** bump semantic-release from 17.0.8 to 17.1.0 ([730ce55](https://github.com/wmfs/statelint/commit/730ce5528e20e3adf7c07d41eb4fab2caa6f649c))
+* **deps-dev:** bump semantic-release from 17.1.0 to 17.1.1 ([be178c5](https://github.com/wmfs/statelint/commit/be178c524305d66465163d35015c25244314e97d))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** separate lint job [ch1009] ([67c1182](https://github.com/wmfs/statelint/commit/67c11828f396ca2a3d9141440b91960f0ed64b14))
+* **circle:** use updated circle node image [skip ci] ([4f93b1a](https://github.com/wmfs/statelint/commit/4f93b1a3f4be148b57aad87a103421c0f8fd799d))
+
 # [1.15.0](https://github.com/wmfs/statelint/compare/v1.14.0...v1.15.0) (2020-05-12)
 
 
