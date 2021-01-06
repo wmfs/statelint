@@ -1,3 +1,40 @@
+# [1.17.0](https://github.com/wmfs/statelint/compare/v1.16.0...v1.17.0) (2021-01-06)
+
+
+### 🛠 Builds
+
+* **deps:** bump n-readlines from 1.0.0 to 1.0.1 ([66380b2](https://github.com/wmfs/statelint/commit/66380b234a5a533bec94e6fbf4d47fba60a84430))
+* **deps-dev:** bump codecov from 3.7.2 to 3.8.0 ([16f63d1](https://github.com/wmfs/statelint/commit/16f63d154c43d94fea91f3d766679106cb204c8f))
+* **deps-dev:** bump codecov from 3.8.0 to 3.8.1 ([8985064](https://github.com/wmfs/statelint/commit/898506453b81606a450033070869d0717eade9c5))
+* **deps-dev:** bump cz-conventional-changelog from 3.2.0 to 3.2.1 ([7970d87](https://github.com/wmfs/statelint/commit/7970d8746a605ea2a2c5ad9ed47a37741cfe75ad))
+* **deps-dev:** bump cz-conventional-changelog from 3.2.1 to 3.3.0 ([2c97ff7](https://github.com/wmfs/statelint/commit/2c97ff785c642df9639abb158452f183ae769541))
+* **deps-dev:** bump mocha from 8.1.1 to 8.1.2 ([c8207c7](https://github.com/wmfs/statelint/commit/c8207c7afb3e2f5615604eb71a4ba3074f7ec67c))
+* **deps-dev:** bump mocha from 8.1.2 to 8.1.3 ([1fb533e](https://github.com/wmfs/statelint/commit/1fb533e900e3137a49b983aaffd2d5d2f974dc43))
+* **deps-dev:** bump mocha from 8.1.3 to 8.2.0 ([dc5eb96](https://github.com/wmfs/statelint/commit/dc5eb96199f8bbdacd0fa9c3281143dc6ae174a4))
+* **deps-dev:** bump mocha from 8.2.0 to 8.2.1 ([f59e69f](https://github.com/wmfs/statelint/commit/f59e69f92f3d48515913319c67016b42b603883a))
+* **deps-dev:** bump semantic-release from 17.1.1 to 17.1.2 ([6dda290](https://github.com/wmfs/statelint/commit/6dda290e069c9073d46b28700f2247ff92785540))
+* **deps-dev:** bump semantic-release from 17.1.2 to 17.2.0 ([f36285a](https://github.com/wmfs/statelint/commit/f36285a3989ce1c42a0d1f9f03497b4670487b2d))
+* **deps-dev:** bump semantic-release from 17.2.0 to 17.2.1 ([3ab575b](https://github.com/wmfs/statelint/commit/3ab575b3ad738c4682a422fd7ff87f64061b8121))
+* **deps-dev:** bump semantic-release from 17.2.1 to 17.2.2 ([38e4ae0](https://github.com/wmfs/statelint/commit/38e4ae02cf07c6fe2c335826e0710c0c5ca7c154))
+* **deps-dev:** bump semantic-release from 17.2.2 to 17.2.3 ([ed183ad](https://github.com/wmfs/statelint/commit/ed183ad314cb44f284e5c5116e0f75dfa4efa4f0))
+* **deps-dev:** bump semantic-release from 17.2.3 to 17.2.4 ([06befde](https://github.com/wmfs/statelint/commit/06befdef0203691f04e6f4362dc896fdc3069f95))
+* **deps-dev:** bump semantic-release from 17.2.4 to 17.3.0 ([197df7b](https://github.com/wmfs/statelint/commit/197df7b22fde023febf7631a7153e80ff486d884))
+* **deps-dev:** bump semantic-release from 17.3.0 to 17.3.1 ([6f2e2f8](https://github.com/wmfs/statelint/commit/6f2e2f891b47115f6d739e72b5b02843ede9094a))
+* **deps-dev:** bump standard from 14.3.4 to 15.0.0 ([029ccf9](https://github.com/wmfs/statelint/commit/029ccf903247c7849d2e84077c971f313f2bf369))
+* **deps-dev:** bump standard from 15.0.0 to 15.0.1 ([de7a953](https://github.com/wmfs/statelint/commit/de7a953cb8f023dae2e70d141222e56551bfa599))
+* **deps-dev:** bump standard from 15.0.1 to 16.0.0 ([38fc7e0](https://github.com/wmfs/statelint/commit/38fc7e02bde267cb8a43bd459276650851c68fa5))
+* **deps-dev:** bump standard from 16.0.0 to 16.0.1 ([7e4cc46](https://github.com/wmfs/statelint/commit/7e4cc465637b60e994f690487c73531ba0fcd613))
+* **deps-dev:** bump standard from 16.0.1 to 16.0.2 ([6189130](https://github.com/wmfs/statelint/commit/61891301866de00a7a2402a727637f7dd1392545))
+* **deps-dev:** bump standard from 16.0.2 to 16.0.3 ([6292646](https://github.com/wmfs/statelint/commit/629264639017159b4001f84c851f9d06234e14e7))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** authenticate Docker image pull [ch2767] ([e8e041e](https://github.com/wmfs/statelint/commit/e8e041e95308928c513735200d279999d162b0c9))
+* **circle:** cache dependencies [ch2770] ([408b29b](https://github.com/wmfs/statelint/commit/408b29b1048078737029e0842d74256e4d9c93b9))
+* **circle:** separate linting job [ch1009] ([4c6c1a2](https://github.com/wmfs/statelint/commit/4c6c1a2cccc0525c8dc4d4dbbac35e7899fee223))
+* **circle:** update build environment variable context name [ch2771] ([ed7ae1a](https://github.com/wmfs/statelint/commit/ed7ae1a77e9afcfa41f908eaa72ace48fe32de6c))
+
 # [1.16.0](https://github.com/wmfs/statelint/compare/v1.15.0...v1.16.0) (2020-08-25)
 
 
