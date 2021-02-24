@@ -1,3 +1,20 @@
+# [1.19.0](https://github.com/wmfs/statelint/compare/v1.18.0...v1.19.0) (2021-02-24)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.17.0 to 1.18.0 ([1d1951a](https://github.com/wmfs/statelint/commit/1d1951a50fca2dea8ccf6ba88e8a13c0362ba4f4))
+* **deps-dev:** bump chai from 4.2.0 to 4.3.0 ([bb2e995](https://github.com/wmfs/statelint/commit/bb2e995471bce2f66b5ca94edaf91d9f511c1c97))
+* **deps-dev:** bump mocha from 8.2.1 to 8.3.0 ([2b9c9d9](https://github.com/wmfs/statelint/commit/2b9c9d919f93cb3a498a512911e2a3ac3e02c1ff))
+* **deps-dev:** bump semantic-release from 17.3.1 to 17.3.2 ([22488b3](https://github.com/wmfs/statelint/commit/22488b36baf2f9aa391af6ae14bc30c852d99e6a))
+* **deps-dev:** bump semantic-release from 17.3.2 to 17.3.3 ([418cedf](https://github.com/wmfs/statelint/commit/418cedf6e4c7eb20ed0bc99fd45275d18a6b8849))
+* **deps-dev:** bump semantic-release from 17.3.3 to 17.3.4 ([e5c1039](https://github.com/wmfs/statelint/commit/e5c10397f1ffa8c6abdd39a39f01eb057c4d893f))
+* **deps-dev:** bump semantic-release from 17.3.4 to 17.3.5 ([430177f](https://github.com/wmfs/statelint/commit/430177fce9d03f840efc1a6a7d4dfbe11aebc3b2))
+* **deps-dev:** bump semantic-release from 17.3.5 to 17.3.6 ([63554cb](https://github.com/wmfs/statelint/commit/63554cb3c5632f05ebf6a070942f817bc81b9c4b))
+* **deps-dev:** bump semantic-release from 17.3.6 to 17.3.7 ([a302579](https://github.com/wmfs/statelint/commit/a3025795d1d66f065705566d69d65a208f41c9ca))
+* **deps-dev:** bump semantic-release from 17.3.7 to 17.3.8 ([0341f19](https://github.com/wmfs/statelint/commit/0341f199ffe5c359639c5018026f4edd0cfbebdd))
+* **deps-dev:** bump semantic-release from 17.3.8 to 17.3.9 ([3f67fd0](https://github.com/wmfs/statelint/commit/3f67fd02e998ac5001a848e587349566134853d6))
+
 # [1.18.0](https://github.com/wmfs/statelint/compare/v1.17.0...v1.18.0) (2021-01-12)
 
 
