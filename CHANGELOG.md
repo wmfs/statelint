@@ -1,3 +1,50 @@
+# [1.20.0](https://github.com/wmfs/statelint/compare/v1.19.0...v1.20.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump chai from 4.3.0 to 4.3.1 ([8608b7d](https://github.com/wmfs/statelint/commit/8608b7d41a5e83381be7e48015d64804cecfc45b))
+* **deps-dev:** bump chai from 4.3.1 to 4.3.2 ([3e00b6a](https://github.com/wmfs/statelint/commit/3e00b6a1e5b894da5913dc103394e4f9b36b070f))
+* **deps-dev:** bump chai from 4.3.2 to 4.3.3 ([def447e](https://github.com/wmfs/statelint/commit/def447eaa9f965871d049b96721f6006f4ceb4bf))
+* **deps-dev:** bump chai from 4.3.3 to 4.3.4 ([fd5d8f2](https://github.com/wmfs/statelint/commit/fd5d8f2bfe9f274e901cfeeb190bbe5b17852308))
+* **deps-dev:** bump codecov from 3.8.1 to 3.8.2 ([0dec37b](https://github.com/wmfs/statelint/commit/0dec37b7b0ee7f92e638165a843cf8be42641d72))
+* **deps-dev:** bump codecov from 3.8.2 to 3.8.3 ([15df197](https://github.com/wmfs/statelint/commit/15df197e9349f86592e5fe66289d6edb242bc22e))
+* **deps-dev:** bump mocha from 8.3.0 to 8.3.1 ([32e7bf4](https://github.com/wmfs/statelint/commit/32e7bf49f96f8188aca43c798ffe1ad29fcb2e69))
+* **deps-dev:** bump mocha from 8.3.1 to 8.3.2 ([ce45285](https://github.com/wmfs/statelint/commit/ce452852062aee6e6c19d9b7e1c11fa75652a8e0))
+* **deps-dev:** bump mocha from 8.3.2 to 8.4.0 ([8e60ab3](https://github.com/wmfs/statelint/commit/8e60ab31cad8c6179195d22047b3470bb8da2995))
+* **deps-dev:** bump mocha from 8.4.0 to 9.0.0 ([d336711](https://github.com/wmfs/statelint/commit/d33671150f9ae8e3f3024bccc67d7df0eded82d0))
+* **deps-dev:** bump mocha from 9.0.0 to 9.0.1 ([6be5791](https://github.com/wmfs/statelint/commit/6be57913fa37a4320fd266ffd4b8d86395fce846))
+* **deps-dev:** bump mocha from 9.0.1 to 9.0.2 ([ab5f182](https://github.com/wmfs/statelint/commit/ab5f1823c3e169b05c6b55b66cc8d8fa38185221))
+* **deps-dev:** bump mocha from 9.0.2 to 9.0.3 ([4e6cda6](https://github.com/wmfs/statelint/commit/4e6cda6b06cc9c15bc5b5fbc46cbe4d63c088217))
+* **deps-dev:** bump semantic-release from 17.3.9 to 17.4.0 ([f11f2f7](https://github.com/wmfs/statelint/commit/f11f2f78ed8b8479c2caee2f8645e6896f2c80c6))
+* **deps-dev:** bump semantic-release from 17.4.0 to 17.4.1 ([8d28578](https://github.com/wmfs/statelint/commit/8d285781eee17278e895efefa4a61d6f85e00740))
+* **deps-dev:** bump semantic-release from 17.4.1 to 17.4.2 ([be45461](https://github.com/wmfs/statelint/commit/be4546163f504c423c28f46b491e0ec1af3217b1))
+* **deps-dev:** bump semantic-release from 17.4.2 to 17.4.3 ([6c884b9](https://github.com/wmfs/statelint/commit/6c884b9773300f9743c0b5c0128aa7efbd2fc6b5))
+* **deps-dev:** bump semantic-release from 17.4.3 to 17.4.4 ([64b31e5](https://github.com/wmfs/statelint/commit/64b31e5112bfa0d5975533c81e2d7fc594a04dab))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6 ([d6b63e7](https://github.com/wmfs/statelint/commit/d6b63e79421d1e4d86abddbf50ef21490b8ac18d))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v10 ([ed1750d](https://github.com/wmfs/statelint/commit/ed1750d490a8cfd477ad2418b35217c3e4de859a))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v9.0.1 ([f938fef](https://github.com/wmfs/statelint/commit/f938fefe8678694a20132ece7fee84cd0661516f))
+* **deps-dev:** update dependency mocha to v9.1.0 ([1110526](https://github.com/wmfs/statelint/commit/1110526b6b4fbdc766465db18844e25d626ab99a))
+* **deps-dev:** update dependency mocha to v9.1.1 ([c9e0e6a](https://github.com/wmfs/statelint/commit/c9e0e6aef9fa10fb9dc74c3e8a553d9d64b71b0a))
+* **deps-dev:** update dependency mocha to v9.1.2 ([ee77750](https://github.com/wmfs/statelint/commit/ee77750dbf94b19781b0f4b0acc6f22d8f7cc335))
+* **deps-dev:** update dependency mocha to v9.1.3 ([f76e86d](https://github.com/wmfs/statelint/commit/f76e86dfad4944c0c35140028e9a8412ef5e2444))
+* **deps-dev:** update dependency mocha to v9.1.4 ([422a659](https://github.com/wmfs/statelint/commit/422a6595aa4018cfc8fe67fd93f7e5328604e007))
+* **deps-dev:** update dependency mocha to v9.2.0 ([6c92f67](https://github.com/wmfs/statelint/commit/6c92f67949ec56f2f459ec31d6f4975de0d1ef6f))
+* **deps-dev:** update dependency semantic-release to v17.4.5 ([bba3347](https://github.com/wmfs/statelint/commit/bba334723b71f198afef73577e0db8cd204e76bf))
+* **deps-dev:** update dependency semantic-release to v17.4.6 ([e1208b2](https://github.com/wmfs/statelint/commit/e1208b20de697ef7672350dff971420103829c58))
+* **deps-dev:** update dependency semantic-release to v17.4.7 ([cca89c5](https://github.com/wmfs/statelint/commit/cca89c5d69b19e6ff187d3d89ce989dfa2046542))
+* **deps-dev:** update dependency semantic-release to v18 ([9619423](https://github.com/wmfs/statelint/commit/9619423529289a0a2f056558661ee2ba942d02d7))
+* **deps-dev:** update dependency semantic-release to v18.0.1 ([adf2da2](https://github.com/wmfs/statelint/commit/adf2da20dcd6de2c7500b6e6fb3ef00beb141304))
+* **deps-dev:** update dependency semantic-release to v19 ([beeb710](https://github.com/wmfs/statelint/commit/beeb7107686be7017859b9f05a181bb1c2dd6e12))
+* **deps-dev:** update dependency standard to v16.0.4 ([2c4f248](https://github.com/wmfs/statelint/commit/2c4f2486464ef3b5a3e7e0a0042a34f71608046e))
+* **deps-dev:** update semantic-release monorepo ([7fd9d5c](https://github.com/wmfs/statelint/commit/7fd9d5ca5db7feab1f3833800ca239445cf1d148))
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/j2119 to v1.20.0 ([b160d1a](https://github.com/wmfs/statelint/commit/b160d1aa5de11c34bdd3ff737d22b26c7775f381))
+
+
+### ♻️ Chores
+
+* add renovate config [ch6600] ([450f5d9](https://github.com/wmfs/statelint/commit/450f5d9693889d621c8946edf632efce5310b949))
+
 # [1.19.0](https://github.com/wmfs/statelint/compare/v1.18.0...v1.19.0) (2021-02-24)
 
 
