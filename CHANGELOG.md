@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/wmfs/statelint/compare/v1.21.0...v1.22.0) (2022-11-02)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/j2119 to v1.23.0 ([2ba3634](https://github.com/wmfs/statelint/commit/2ba3634f83feb4e561fd464347944e9c27dcecbb))
+
 # [1.21.0](https://github.com/wmfs/statelint/compare/v1.20.0...v1.21.0) (2022-11-02)
 
 
