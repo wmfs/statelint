@@ -1,3 +1,20 @@
+# [1.23.0](https://github.com/wmfs/statelint/compare/v1.22.0...v1.23.0) (2023-03-13)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6.0.2 ([75776ab](https://github.com/wmfs/statelint/commit/75776aba3dc107a815fc8ab6d6ab8bb9b0338981))
+* **deps-dev:** update dependency chai to v4.3.7 ([31691d7](https://github.com/wmfs/statelint/commit/31691d7c11abd4b0c4ea0edd45864d0cb887e7f7))
+* **deps-dev:** update dependency mocha to v10.2.0 ([ca12239](https://github.com/wmfs/statelint/commit/ca1223928c699956ba21886b451c029bd3c9d0b9))
+* **deps-dev:** update dependency semantic-release to v20 ([5bc4f00](https://github.com/wmfs/statelint/commit/5bc4f0086933f165f27954b596cd9d78ae6f5555))
+* **deps-dev:** update dependency semantic-release to v20.0.1 ([b0f7c5e](https://github.com/wmfs/statelint/commit/b0f7c5ecfadc4b95e7981632b692168ea6485c07))
+* **deps-dev:** update dependency semantic-release to v20.0.2 ([64845ca](https://github.com/wmfs/statelint/commit/64845cae287a5a3713efc766db612d6ac849ff45))
+* **deps-dev:** update dependency semantic-release to v20.0.3 ([4d49520](https://github.com/wmfs/statelint/commit/4d49520eb2d6645e01513a4f5973e2e7c31a4492))
+* **deps-dev:** update dependency semantic-release to v20.0.4 ([44711c7](https://github.com/wmfs/statelint/commit/44711c757871dbaf4db615b5915f8ed33a810116))
+* **deps-dev:** update dependency semantic-release to v20.1.0 ([6b6475e](https://github.com/wmfs/statelint/commit/6b6475e04e299084d5ab788c85e13c7af2bd7bf8))
+* **deps-dev:** update dependency semantic-release to v20.1.1 ([1b4bbec](https://github.com/wmfs/statelint/commit/1b4bbec24279692990262c8b063dfea1260363be))
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/j2119 to v1.24.0 ([9f38ebb](https://github.com/wmfs/statelint/commit/9f38ebb5ea5ebff95e7a00b14fde9e5fd7f5410c))
+
 # [1.22.0](https://github.com/wmfs/statelint/compare/v1.21.0...v1.22.0) (2022-11-02)
 
 
