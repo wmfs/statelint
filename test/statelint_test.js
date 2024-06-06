@@ -29,7 +29,7 @@ describe('StateMachineLint', () => {
     )
   })
 
-  describe('Parameters only valid on Pass, Task, and Parallel', () => {
+  describe('Parameters only valid on Pass, Task, Parallel, and Map', () => {
     verify(
       'Pass With Parameters',
       require('./fixtures/pass-with-parameters'),
@@ -43,6 +43,11 @@ describe('StateMachineLint', () => {
     verify(
       'Parallel With Parameters',
       require('./fixtures/parallel-with-parameters'),
+      0
+    )
+    verify(
+      'Map With Parameters',
+      require('./fixtures/map-with-parameters'),
       0
     )
   })
@@ -86,7 +91,7 @@ describe('StateMachineLint', () => {
     )
   })
 
-  describe('ResultPath only valid on Pass, Task, Parallel', () => {
+  describe.only('ResultPath only valid on Pass, Task, Parallel, and Map', () => {
     verify(
       'Pass with ResultPath',
       require('./fixtures/pass-with-resultpath'),
@@ -100,6 +105,11 @@ describe('StateMachineLint', () => {
     verify(
       'Parallel with ResultPath',
       require('./fixtures/parallel-with-resultpath'),
+      0
+    )
+    verify(
+      'Map with ResultPath',
+      require('./fixtures/map-with-resultpath'),
       0
     )
   })

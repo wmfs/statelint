@@ -1,0 +1,18 @@
+{
+  "StartAt": "p",
+  "States": {
+    "p": {
+      "Type": "Map",
+      "ResultPath": "$.foo",
+      "ItemProcessor": {
+        "StartAt": "x",
+        "States": {
+          "x": {
+            "Type": "Succeed"
+          }
+        }
+      },
+      "End": true
+    }
+  }
+}
