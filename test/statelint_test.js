@@ -91,7 +91,7 @@ describe('StateMachineLint', () => {
     )
   })
 
-  describe.only('ResultPath only valid on Pass, Task, Parallel, and Map', () => {
+  describe('ResultPath only valid on Pass, Task, Parallel, and Map', () => {
     verify(
       'Pass with ResultPath',
       require('./fixtures/pass-with-resultpath'),
