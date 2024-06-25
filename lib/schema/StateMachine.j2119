@@ -4,7 +4,7 @@ A State Machine MUST have a string field named "StartAt".
 A State Machine MAY have a string field named "Comment".
 A State Machine MAY have a string field named "Version".
 A State Machine MAY have a positive-integer field named "TimeoutSeconds" whose value MUST be less than 99999999.
-A State MUST have a string field named "Type" whose value MUST be one of "Pass", "Succeed", "Fail", "Task", "Choice", "Wait", or "Parallel".
+A State MUST have a string field named "Type" whose value MUST be one of "Pass", "Succeed", "Fail", "Task", "Choice", "Wait", "Parallel", or "Map".
 A State whose "Type" field's value is "Pass" is a "Pass State".
 A State whose "Type" field's value is "Succeed" is a "Succeed State".
 A State whose "Type" field's value is "Fail" is a "Fail State".
@@ -12,22 +12,23 @@ A State whose "Type" field's value is "Task" is a "Task State".
 A State whose "Type" field's value is "Choice" is a "Choice State".
 A State whose "Type" field's value is "Wait" is a "Wait State".
 A State whose "Type" field's value is "Parallel" is a "Parallel State".
+A State whose "Type" field's value is "Map" is a "Map State".
 A State MAY have a string field named "Comment".
-Each of a Pass State, a Task State, a Wait State, and a Parallel State MAY have a boolean field named "End".
-Each of a Pass State, a Task State, and a Parallel State MAY have a field named "Parameters".
+Each of a Pass State, a Task State, a Wait State, a Parallel State, and a Map State MAY have a boolean field named "End".
+Each of a Pass State, a Task State, a Parallel State, and a Map State MAY have a field named "Parameters".
 A State whose "End" field's value is true is a "Terminal State".
 Each of a Succeed State and a Fail State is a "Terminal State".
 A State which is not a Terminal State or a Choice State MUST have a string field named "Next".
 A Terminal State MUST NOT have a field named "Next".
 A State MAY have a nullable-JSONPath field named "InputPath".
-Each of a Pass State, a Task State, and a Parallel State MAY have a nullable-referencePath field named "ResultPath".
+Each of a Pass State, a Task State, a Parallel State, and a Map State MAY have a nullable-referencePath field named "ResultPath".
 A State MAY have a nullable-JSONPath field named "OutputPath".
 A Pass State MAY have a field named "Result".
 A Fail State MUST NOT have a field named "InputPath".
 A Fail State MUST NOT have a field named "OutputPath".
 A Fail State MAY have a string field named "Cause".
 A Fail State MAY have a string field named "Error".
-Each of a Task State and a Parallel State MAY have an object-array field named "Retry"; each element is a "Retrier".
+Each of a Task State, a Parallel State, and a Map State MAY have an object-array field named "Retry"; each element is a "Retrier".
 A Task State MUST have a URI field named "Resource".
 A Task State MAY have a positive-integer field named "TimeoutSeconds" whose value MUST be less than 99999999.
 A Task State MAY have a positive-integer field named "HeartbeatSeconds" whose value MUST be less than 99999999.
@@ -35,7 +36,7 @@ A Retrier MUST have a nonempty-string-array field named "ErrorEquals".
 A Retrier MAY have an positive-integer field named "IntervalSeconds".
 A Retrier MAY have a nonnegative-integer field named "MaxAttempts" whose value MUST be less than 99999999.
 A Retrier MAY have a float field named "BackoffRate" whose value MUST be greater than or equal to 1.0.
-Each of a Task State and a Parallel State MAY have an object-array field named "Catch"; each element is a "Catcher".
+Each of a Task State, a Parallel State, and a Map State MAY have an object-array field named "Catch"; each element is a "Catcher".
 A Catcher MUST have an nonempty-string-array field named "ErrorEquals".
 A Catcher MUST have a string field named "Next".
 A Catcher MAY have a nullable-referencePath field named "ResultPath".
@@ -112,3 +113,37 @@ A Parallel State MUST have an object-array field named "Branches"; each element 
 A Branch MUST have an object field named "States"; each element is a "State".
 A Branch MUST have a string field named "StartAt".
 A Branch MAY have a string field named "Comment".
+A Map State MAY have an object field named "ItemReader"; its value is an "ItemReader Configuration".
+An ItemReader Configuration MUST have a string field named "Resource".
+An ItemReader Configuration MAY have an object field named "Parameters".
+An ItemReader Configuration MAY have an object field named "ReaderConfig"; its value is a "ReaderConfig".
+A ReaderConfig MAY have a positive-integer field named "MaxItems".
+A ReaderConfig MAY have a referencePath field named "MaxItemsPath".
+A ReaderConfig MUST have only one of "MaxItems" and "MaxItemsPath".
+A Map State MAY have a referencePath field named "ItemsPath".
+A Map State MAY have an object field named "ItemSelector".
+A Map State MAY have an object field named "ItemBatcher"; its value is an "ItemBatcher Configuration".
+An ItemBatcher Configuration MAY have an object field named "BatchInput".
+An ItemBatcher Configuration MAY have a positive-integer field named "MaxItemsPerBatch".
+An ItemBatcher Configuration MAY have a referencePath field named "MaxItemsPerBatchPath".
+An ItemBatcher Configuration MUST have only one of "MaxItemsPerBatch" and "MaxItemsPerBatchPath".
+An ItemBatcher Configuration MAY have a positive-integer field named "MaxInputBytesPerBatch".
+An ItemBatcher Configuration MAY have a referencePath field named "MaxInputBytesPerBatchPath".
+An ItemBatcher Configuration MUST have only one of "MaxInputBytesPerBatch" and "MaxInputBytesPerBatchPath".
+An ItemBatcher Configuration MUST have a field named one of "MaxItemsPerBatchPath", "MaxItemsPerBatchPathPath", "MaxInputBytesPerBatch", or "MaxInputBytesPerBatchPath".
+A Map State MUST have an object field named "ItemProcessor"; its value is an "ItemProcessor".
+An ItemProcessor MUST have a string field named "StartAt".
+An ItemProcessor MUST have an object field named "States"; each element is a "State".
+An ItemProcessor MAY have an object field named "ProcessorConfig".
+A Map State MAY have an object field named "ResultWriter"; its value is a "ResultWriter Configuration".
+A ResultWriter Configuration MUST have a string field named "Resource".
+A ResultWriter Configuration MAY have an object field named "Parameters".
+A Map State MAY have a positive-integer field named "MaxConcurrency".
+A Map State MAY have a referencePath field named "MaxConcurrencyPath".
+A Map State MUST have only one of "MaxConcurrency" and "MaxConcurrencyPath".
+A Map State MAY have a positive-integer field named "ToleratedFailurePercentage".
+A Map State MAY have a referencePath field named "ToleratedFailurePercentagePath".
+A Map State MUST have only one of "ToleratedFailurePercentage" and "ToleratedFailurePercentagePath".
+A Map State MAY have a positive-integer field named "ToleratedFailureCount".
+A Map State MAY have a referencePath field named "ToleratedFailureCountPath".
+A Map State MUST have only one of "ToleratedFailureCount" and "ToleratedFailureCountPath".
