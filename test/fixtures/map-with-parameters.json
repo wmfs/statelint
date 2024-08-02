@@ -1,0 +1,20 @@
+{
+  "StartAt": "p",
+  "States": {
+    "p": {
+      "Type": "Map",
+      "Parameters": {
+        "foo.$": "$.bar"
+      },
+      "ItemProcessor": {
+        "StartAt": "x",
+        "States": {
+          "x": {
+            "Type": "Succeed"
+          }
+        }
+      },
+      "End": true
+    }
+  }
+}
