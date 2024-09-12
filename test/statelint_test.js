@@ -7,11 +7,39 @@ const expect = chai.expect
 const stateLint = require('../lib')
 
 describe('StateMachineLint', () => {
-  verify(
-    'Allow Fail states to omit optional Cause/Error fields',
-    require('./fixtures/minimal-fail-state.json'),
+  describe('Fail states', () => {
+    verify(
+      'Allow Fail states to omit optional Cause/Error fields',
+      require('./fixtures/minimal-fail-state.json'),
+      0
+    )
+
+    verify(
+      'Allow Fail states to use ErrorPath and CausePath fields',
+      require('./fixtures/fail-with-error-and-cause-path.json'),
+      0
+    )
+
+    verify(
+    'Allow Fail states to use ErrorPath and CausePath fields with intrinsic functions',
+      require('./fixtures/fail-with-error-and-cause-path-using-intrinsic-functions.json'),
     0
-  )
+    )
+
+    verify(
+      'Reject Fail state with both static and dynamic error',
+      require('./fixtures/fail-with-static-and-dynamic-error.json'),
+      1,
+      'may have only one of Error,ErrorPath'
+    )
+
+    verify(
+      'Reject Fail state with both static and dynamic cause',
+      require('./fixtures/fail-with-static-and-dynamic-cause.json'),
+      1,
+      'may have only one of Cause,CausePath'
+    )
+  })
 
   describe('Empty ErrorEquals clauses', () => {
     verify(
