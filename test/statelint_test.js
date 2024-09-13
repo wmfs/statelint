@@ -57,13 +57,13 @@ describe('StateMachineLint', () => {
 
   describe('Empty ErrorEquals clauses', () => {
     verify(
-      'reject empty ErrorEquals on Catch',
+      'Reject empty ErrorEquals on Catch',
       require('./fixtures/empty-error-equals-on-catch'),
       'non-empty required'
     )
 
     verify(
-      'reject empty ErrorEquals on Retry',
+      'Reject empty ErrorEquals on Retry',
       require('./fixtures/empty-error-equals-on-retry'),
       'non-empty required'
     )
