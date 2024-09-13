@@ -36,6 +36,25 @@ describe('StateMachineLint', () => {
     )
   })
 
+  describe('Delay and Jitter', () => {
+    verify(
+      'Allow Retry to with MaxDelaySeconds and JitterStrategy',
+      require('./fixtures/backoff-with-jitter-on-retry.json')
+    )
+
+    verify(
+      'Reject invalid JitterStrategy',
+      require('./fixtures/backoff-with-invalid-jitter-on-retry.json'),
+      'not one of the allowed values FULL,NONE'
+    )
+
+    verify(
+      'Reject invalid MaxDelaySeconds',
+      require('./fixtures/invalid-backoff-with-jitter-on-retry.json'),
+      'allowed floor is 0'
+    )
+  })
+
   describe('Empty ErrorEquals clauses', () => {
     verify(
       'reject empty ErrorEquals on Catch',
