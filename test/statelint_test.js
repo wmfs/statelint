@@ -19,7 +19,7 @@ describe('StateMachineLint', () => {
     )
 
     verify(
-    'Allow Fail states to use ErrorPath and CausePath fields with intrinsic functions',
+      'Allow Fail states to use ErrorPath and CausePath fields with intrinsic functions',
       require('./fixtures/fail-with-error-and-cause-path-using-intrinsic-functions.json')
     )
 
@@ -179,6 +179,22 @@ describe('StateMachineLint', () => {
     verify(
       'Allow dynamic timeout fields in Task state',
       require('./fixtures/task-with-dynamic-timeouts.json')
+    )
+  })
+
+  describe('Null paths', () => {
+    verify(
+      'Allow null values in InputPath',
+      require('./fixtures/pass-with-null-inputpath.json')
+    )
+    verify(
+      'Allow null values in OutputPath',
+      require('./fixtures/pass-with-null-outputpath.json')
+    )
+    verify(
+      'Not allow null value in Map state ItemsPath',
+      require('./fixtures/map-with-null-itemspath.json'),
+      'ItemsPath'
     )
   })
 
