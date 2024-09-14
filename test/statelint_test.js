@@ -162,18 +162,23 @@ describe('StateMachineLint', () => {
 
   describe('Context object', () => {
     verify(
-      'should allow context object access in InputPath and OutputPath',
+      'Allow context object access in InputPath and OutputPath',
       require('./fixtures/pass-with-io-path-context-object.json')
     )
-
     verify(
-      'should allow context object access in Choice state Variable',
+      'Allow context object access in Choice state Variable',
       require('./fixtures/choice-with-context-object.json')
     )
-
     verify(
-      'should allow context object access in Map state ItemsPath',
+      'Allow context object access in Map state ItemsPath',
       require('./fixtures/map-with-itemspath-context-object.json')
+    )
+  })
+
+  describe('Timeouts', () => {
+    verify(
+      'Allow dynamic timeout fields in Task state',
+      require('./fixtures/task-with-dynamic-timeouts.json')
     )
   })
 
