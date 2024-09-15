@@ -248,7 +248,7 @@ describe('StateMachineLint', () => {
     )
   })
 
-  describe('Instrinsic function invocation in payload builder fields', () => {
+  describe('Intrinsic function invocation in payload builder fields', () => {
     verify(
       'States Array invocation',
       require('./fixtures/states-array-invocation.json')
@@ -279,6 +279,37 @@ describe('StateMachineLint', () => {
       'Reject intrinsic function inputpath',
       require('./fixtures/pass-with-intrinsic-function-inputpath.json'),
       '"InputPath"'
+    )
+  })
+
+  describe('Functions added in 2022', () => {
+    verify(
+      'Array intrinsic function',
+      require('./fixtures/states-array-intrinsic-functions.json')
+    )
+    verify(
+      'Encoding/decoding intrinsic function',
+      require('./fixtures/states-encoding-decoding-intrinsic-functions.json')
+    )
+    verify(
+      'Hash intrinsic function',
+      require('./fixtures/states-hash-intrinsic-functions.json')
+    )
+    verify(
+      'Json intrinsic function',
+      require('./fixtures/states-json-intrinsic-functions.json')
+    )
+    verify(
+      'Math intrinsic function',
+      require('./fixtures/states-math-intrinsic-functions.json')
+    )
+    verify(
+      'String intrinsic function',
+      require('./fixtures/states-string-intrinsic-functions.json')
+    )
+    verify(
+      'UUID intrinsic function',
+      require('./fixtures/states-uuid-intrinsic-functions.json')
     )
   })
 
