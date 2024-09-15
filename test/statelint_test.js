@@ -238,6 +238,39 @@ describe('StateMachineLint', () => {
     )
   })
 
+  describe('Instrinsic function invocation in payload builder fields', () => {
+    verify(
+      'States Array invocation',
+      require('./fixtures/states-array-invocation.json')
+    )
+    verify(
+      'States Format invocation',
+      require('./fixtures/states-format-invocation.json')
+    )
+    verify(
+      'States StringToJson invocation',
+      require('./fixtures/states-stringtojson-invocation.json')
+    )
+    verify(
+      'States JsonToString invocation',
+      require('./fixtures/states-jsontostring-invocation.json')
+    )
+    verify(
+      'Reject invalid States Array invocation',
+      require('./fixtures/states-array-invocation-leftpad.json'),
+      'not a JSONPath or intrinsic function expression'
+    )
+    verify(
+      'Reject invalid Function invocation',
+      require('./fixtures/invalid-function-invocation.json'),
+      'not a JSONPath or intrinsic function expression'
+    )
+    verify(
+      'Reject intrinsic function inputpath',
+      require('./fixtures/pass-with-intrinsic-function-inputpath.json'),
+      '"InputPath"'
+    )
+  })
   describe('Validate Catch', () => {
     verify(
       'Catch States.ALL',
