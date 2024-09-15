@@ -341,6 +341,18 @@ describe('StateMachineLint', () => {
     )
   })
 
+  describe('Task state', () => {
+    verify(
+      'Allow Credentials in Task',
+      require('./fixtures/task-with-credentials.json')
+    )
+    verify(
+      'Reject invalid Credentials in Task',
+      require('./fixtures/task-with-invalid-credentials.json'),
+      'should be an Object'
+    )
+  })
+
   describe('Validate Catch', () => {
     verify(
       'Catch States.ALL',
@@ -360,8 +372,6 @@ function verify (label, json, ...msg) {
   it(label, () => {
     const linter = stateLint()
     const problems = linter.validate(json)
-
-    console.log(problems)
 
     expect(problems.length).to.eql(msg.length)
     for (let i = 0; i !== msg.length; ++i) {
