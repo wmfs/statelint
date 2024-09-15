@@ -198,6 +198,46 @@ describe('StateMachineLint', () => {
     )
   })
 
+  describe('ResultSelector', () => {
+    verify(
+      'Allow ResultSelector on Task',
+      require('./fixtures/task-with-resultselector.json')
+    )
+    verify(
+      'Allow ResultSelector on Parallel',
+      require('./fixtures/parallel-with-resultselector.json')
+    )
+    verify(
+      'Allow ResultSelector on Map',
+      require('./fixtures/map-with-resultselector.json')
+    )
+    verify(
+      'Reject ResultSelector on Pass',
+      require('./fixtures/pass-with-resultselector.json'),
+      '"ResultSelector"'
+    )
+    verify(
+      'Reject ResultSelector on Wait',
+      require('./fixtures/wait-with-resultselector.json'),
+      '"ResultSelector"'
+    )
+    verify(
+      'Reject ResultSelector on Fail',
+      require('./fixtures/fail-with-resultselector.json'),
+      '"ResultSelector"'
+    )
+    verify(
+      'Reject ResultSelector on Succeed',
+      require('./fixtures/succeed-with-resultselector.json'),
+      '"ResultSelector"'
+    )
+    verify(
+      'Reject ResultSelector on Choice',
+      require('./fixtures/choice-with-resultselector.json'),
+      '"ResultSelector"'
+    )
+  })
+
   describe('Validate Catch', () => {
     verify(
       'Catch States.ALL',
