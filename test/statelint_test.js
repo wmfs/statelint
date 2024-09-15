@@ -313,6 +313,17 @@ describe('StateMachineLint', () => {
     )
   })
 
+  describe('Comment', () => {
+    verify(
+      'Allow Choice Rule to use Comment',
+      require('./fixtures/choice-rule-with-comment.json')
+    )
+    verify(
+      'Allow a Comment field in Catcher',
+      require('./fixtures/succeed-with-comment-in-catcher.json')
+    )
+  })
+
   describe('Validate Catch', () => {
     verify(
       'Catch States.ALL',
