@@ -188,7 +188,7 @@ describe('StateMachineLint', () => {
     verify(
       'Reject task with static and dynamic timeouts',
       require('./fixtures/task-with-static-and-dynamic-heartbeat.json'),
-    'may have only one of HeartbeatSeconds,HeartbeatSecondsPath'
+      'may have only one of HeartbeatSeconds,HeartbeatSecondsPath'
     )
   })
 
