@@ -180,6 +180,16 @@ describe('StateMachineLint', () => {
       'Allow dynamic timeout fields in Task state',
       require('./fixtures/task-with-dynamic-timeouts.json')
     )
+    verify(
+      'Reject task with static and dynamic timeouts',
+      require('./fixtures/task-with-static-and-dynamic-timeout.json'),
+      'may have only one of TimeoutSeconds,TimeoutSecondsPath'
+    )
+    verify(
+      'Reject task with static and dynamic timeouts',
+      require('./fixtures/task-with-static-and-dynamic-heartbeat.json'),
+    'may have only one of HeartbeatSeconds,HeartbeatSecondsPath'
+    )
   })
 
   describe('Null paths', () => {
@@ -271,6 +281,7 @@ describe('StateMachineLint', () => {
       '"InputPath"'
     )
   })
+
   describe('Validate Catch', () => {
     verify(
       'Catch States.ALL',
