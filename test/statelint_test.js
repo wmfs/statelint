@@ -324,6 +324,23 @@ describe('StateMachineLint', () => {
     )
   })
 
+  describe('Map state', () => {
+    verify(
+      'Allow ItemProcessor in Map',
+      require('./fixtures/map-with-itemprocessor.json')
+    )
+    verify(
+      'Reject Map state with both Iterator and ItemProcessor',
+      require('./fixtures/map-with-itemprocessor-and-iterator.json'),
+      'may have only one of Iterator,ItemProcessor'
+    )
+    verify(
+      'Reject Map state with both Parameters and ItemSelector',
+      require('./fixtures/map-with-parameters-and-itemselector.json'),
+      'may have only one of ItemSelector,Parameters'
+    )
+  })
+
   describe('Validate Catch', () => {
     verify(
       'Catch States.ALL',
