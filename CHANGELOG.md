@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/wmfs/statelint/compare/v1.24.0...v1.25.0) (2024-09-18)
+
+
+### Features
+
+* Update to current version of the Amazon State Language ([#292](https://github.com/wmfs/statelint/issues/292)) ([35b08f8](https://github.com/wmfs/statelint/commit/35b08f8b51af12bd851d9bfbe382927899b0239a))
+
 # [1.24.0](https://github.com/wmfs/statelint/compare/v1.23.0...v1.24.0) (2023-05-09)
 
 
