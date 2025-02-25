@@ -1,3 +1,15 @@
+## [1.27.0](https://github.com/wmfs/statelint/compare/v1.26.0...v1.27.0) (2025-02-25)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** [sc-29160] Resolve issue with semantic-release changelog notes ([#303](https://github.com/wmfs/statelint/issues/303)) ([9ff2b35](https://github.com/wmfs/statelint/commit/9ff2b35a35d5a6ec770778c493dcd444ffd72bb7))
+* **deps-dev:** update dependency mocha to v11 ([#301](https://github.com/wmfs/statelint/issues/301)) ([7b5e9d3](https://github.com/wmfs/statelint/commit/7b5e9d3ec4f5c471bdf068a677cbbf683d366af4))
+* **deps-dev:** update dependency mocha to v11.1.0 ([#304](https://github.com/wmfs/statelint/issues/304)) ([353306c](https://github.com/wmfs/statelint/commit/353306c44a8f8915a1f15274c59f50a5ef14fd12))
+* **deps-dev:** update dependency semantic-release to v24.2.1 ([#302](https://github.com/wmfs/statelint/issues/302)) ([30bcb02](https://github.com/wmfs/statelint/commit/30bcb024692d0dc5f5cde8de989f6644724b77b8))
+* **deps-dev:** update dependency semantic-release to v24.2.2 ([#305](https://github.com/wmfs/statelint/issues/305)) ([125589c](https://github.com/wmfs/statelint/commit/125589cc182bd5b9af53c7c1d0ebcc5fe01da303))
+* **deps-dev:** update dependency semantic-release to v24.2.3 ([#306](https://github.com/wmfs/statelint/issues/306)) ([86ed266](https://github.com/wmfs/statelint/commit/86ed2669c7d85009c38011673e7906d33f0c2e00))
+* **deps:** update dependency @wmfs/j2119 to v1.27.0 ([#307](https://github.com/wmfs/statelint/issues/307)) ([b763be5](https://github.com/wmfs/statelint/commit/b763be573950f30f2083e85880b031dcef8f301d))
+
 # [1.26.0](https://github.com/wmfs/statelint/compare/v1.25.0...v1.26.0) (2024-11-04)
 
 # [1.25.0](https://github.com/wmfs/statelint/compare/v1.24.0...v1.25.0) (2024-09-18)
