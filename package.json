@@ -28,9 +28,9 @@
     "n-readlines": "1.0.1"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/changelog": "7.0.0",
     "@semantic-release/release-notes-generator": "14.1.1",
-    "@semantic-release/git": "10.0.1",
+    "@semantic-release/git": "11.0.0",
     "chai": "4.5.0",
     "codecov": "3.8.3",
     "conventional-changelog-conventionalcommits": "10.2.1",
