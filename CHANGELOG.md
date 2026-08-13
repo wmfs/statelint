@@ -1,3 +1,5 @@
+## [1.30.1](https://github.com/wmfs/statelint/compare/v1.30.0...v1.30.1) (2026-08-13)
+
 ## [1.30.0](https://github.com/wmfs/statelint/compare/v1.29.0...v1.30.0) (2025-07-10)
 
 ### Build system dependencies :hammer:
