@@ -1,3 +1,21 @@
+## [1.31.0](https://github.com/wmfs/statelint/compare/v1.30.1...v1.31.0) (2026-11-02)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** fix conventionalcommit versions [sc-34125] ([e4b4bb1](https://github.com/wmfs/statelint/commit/e4b4bb15fe77b3b5c99eea4bdfafe199819fd333))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.0 ([#361](https://github.com/wmfs/statelint/issues/361)) ([8651c29](https://github.com/wmfs/statelint/commit/8651c29aa99b3d061019e5e9d43667d398a40d88))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.1 ([#366](https://github.com/wmfs/statelint/issues/366)) ([301ecf8](https://github.com/wmfs/statelint/commit/301ecf8315be45b4dc13492ed266c6fd4aaadb74))
+* **deps-dev:** update dependency mocha to v12 ([#362](https://github.com/wmfs/statelint/issues/362)) ([b24c36a](https://github.com/wmfs/statelint/commit/b24c36a7434a49f9bba072ac7fb2542bad1ac553))
+* **deps-dev:** update dependency mocha to v12.0.1 ([#363](https://github.com/wmfs/statelint/issues/363)) ([09b7e5d](https://github.com/wmfs/statelint/commit/09b7e5d951a3b84df20487be5487e7c5bb718e9a))
+* **deps-dev:** update dependency mocha to v12.0.2 ([#364](https://github.com/wmfs/statelint/issues/364)) ([ef3b209](https://github.com/wmfs/statelint/commit/ef3b2092588c1ce74cce81dbc980e3935de1fca1))
+* **deps-dev:** update dependency mocha to v12.0.3 ([#365](https://github.com/wmfs/statelint/issues/365)) ([7279ef1](https://github.com/wmfs/statelint/commit/7279ef1883b864c3b13efcdaa52440aaa0055274))
+* **deps:** update dependency @wmfs/j2119 to v1.30.1 ([#368](https://github.com/wmfs/statelint/issues/368)) ([10fcfbd](https://github.com/wmfs/statelint/commit/10fcfbd9f249df278196dbf17319313ab399a150))
+
+### CICD Configuration Changes :construction_worker:
+
+* use github-app-token orb for release token [sc-34101] ([#369](https://github.com/wmfs/statelint/issues/369)) ([2333230](https://github.com/wmfs/statelint/commit/2333230556a3321a7a59bc117c62fb57c6197cf9))
+* use shared renovate preset [sc-34117] ([#367](https://github.com/wmfs/statelint/issues/367)) ([ecd7a92](https://github.com/wmfs/statelint/commit/ecd7a920dd35fc6b0e5ea86d4f6172fc63c70976))
+
 ## [1.30.1](https://github.com/wmfs/statelint/compare/v1.30.0...v1.30.1) (2026-08-13)
 
 ## [1.30.0](https://github.com/wmfs/statelint/compare/v1.29.0...v1.30.0) (2025-07-10)
