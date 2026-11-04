@@ -1,3 +1,9 @@
+## [1.32.0](https://github.com/wmfs/statelint/compare/v1.31.0...v1.32.0) (2026-11-04)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency @wmfs/j2119 to v1.32.0 ([#370](https://github.com/wmfs/statelint/issues/370)) ([ceb6b04](https://github.com/wmfs/statelint/commit/ceb6b04808abf70927e5d24694f2bdaebb8ad0e3))
+
 ## [1.31.0](https://github.com/wmfs/statelint/compare/v1.30.1...v1.31.0) (2026-11-02)
 
 ### Build system dependencies :hammer:
